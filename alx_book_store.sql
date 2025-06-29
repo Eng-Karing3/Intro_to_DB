@@ -3,12 +3,12 @@ USE alx_book_store;
 
 CREATE TABLE Authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    author_name VARCHAR(215) NOT NULL
+    author_name VARCHAR(215)
 );
 
 CREATE TABLE Books (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(130) NOT NULL,
+    title VARCHAR(130),
     author_id INT,
     price DOUBLE,
     publication_date DATE,
@@ -17,8 +17,8 @@ CREATE TABLE Books (
 
 CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_name VARCHAR(215) NOT NULL,
-    email VARCHAR(215) NOT NULL,
+    customer_name VARCHAR(215),
+    email VARCHAR(215),
     address TEXT
 );
 
